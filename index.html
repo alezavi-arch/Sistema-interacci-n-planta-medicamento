@@ -3,45 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BotaniCheck – Sistema de Interacciones</title>
+    <title>BotaniCheck – Interacciones Plantas y Fármacos</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f8f8f8;
             margin: 0;
-            padding: 40px;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f4f8f4;
+            color: #2e3d2c;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #4caf50, #2e7d32);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
         }
         .card {
             background: white;
-            max-width: 600px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
         a.button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 20px;
-            background-color: #2ea44f;
+            background-color: #43a047;
             color: white;
+            padding: 15px 25px;
+            font-size: 1.1rem;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: bold;
+            transition: background-color 0.3s ease;
         }
         a.button:hover {
-            background-color: #24913d;
+            background-color: #2e7d32;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e8f5e9;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>BotaniCheck</h1>
-        <p>Explora el sistema interactivo de prevención de interacciones entre plantas medicinales y fármacos en Colombia.</p>
-        <a class="button" href="https://colab.research.google.com/drive/1PzDz4DIdO9zDC24Y4J_doPKdy305ItHA?usp=sharing" target="_blank">
-            Abrir en Google Colab 🚀
-        </a>
-    </div>
+    <header>
+        <h1>🌿 BotaniCheck</h1>
+        <p>Sistema interactivo para prevenir interacciones entre plantas medicinales y fármacos en Colombia</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Tu salud, respaldada por la ciencia</h2>
+            <p>
+                BotaniCheck es una herramienta educativa que permite identificar posibles riesgos en el consumo 
+                simultáneo de tratamientos naturales y medicamentos farmacológicos. 
+                Úsalo como apoyo para la toma de decisiones informadas y responsables en el cuidado de tu salud.
+            </p>
+            <a class="button" href="https://colab.research.google.com/drive/1PzDz4DIdO9zDC24Y4J_doPKdy305ItHA?usp=sharing" target="_blank">
+                🚀 Abrir Proyecto en Google Colab
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        Desarrollado como proyecto académico | Inspirado en la medicina ancestral y la innovación tecnológica 🌱
+    </footer>
 </body>
 </html>
